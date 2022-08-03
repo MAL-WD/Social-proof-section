@@ -1,0 +1,154 @@
+*{
+    font-family: "League Spartan";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    font-size: 15px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 100px 50px;
+    box-shadow: 0 0 10px #ddd;
+    padding: 100px;
+    background-color: white;
+    
+}
+.container .text{
+    flex-basis: 40%;
+    margin-bottom: 70px;
+}
+@media (max-width:1000px) {
+    .container .text{
+        flex-basis: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .container .rates{
+        flex-basis: 90%;
+        margin: 20px auto;
+    }
+    
+    
+}
+.container .text h1{
+    font-size: 54px;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 30px;
+}
+.text p{
+    color: hsl(303, 10%, 53%);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.container .rates{
+    flex-basis: 40%;
+    margin-bottom: 100px;
+}
+.container .rates .rate{
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    align-items: center;
+}
+.rates .rate:first-child{
+    transform: translateX(-60px);
+}
+.rates .rate:nth-child(2){
+    transform: translateX(-30px);
+}
+@media (max-width:1000px) {
+    .container .rates{
+        flex-basis: 90%;
+        margin: 40px auto;
+        text-align: center;
+    }
+    .stars {
+        margin: 0px auto 10px;
+    }
+    .rates .rate{
+        flex-wrap: wrap;
+    }
+    .rates .rate:first-child{
+        transform: translateX(0);
+    }
+    .rates .rate:nth-child(2){
+        transform: translateX(-0);
+    }
+
+}
+.rates .rate .stars{
+    margin-right: 30px;
+}
+.rates .rate h3{
+    color:hsl(300, 43%, 22%) ;
+}
+.profiles{
+    justify-content: space-around;
+    display: flex;
+    gap: 40px;
+
+}
+.profile{
+    background-color: hsl(300, 43%, 22%);
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+.profile .header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+.profile .header img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.profile .header h3{
+    color: white;
+    margin-bottom: 5px;
+}
+.profile .header .name p{
+    color: hsl(333, 80%, 67%);
+}
+.profile p{
+    color: white;
+    line-height: 1.6;
+}
+.profile:first-child{
+    transform: translatey(-20px);
+}
+.profile:nth-child(2){
+    transform: translatey(-10px);
+}
+
+@media (max-width:1000px) {
+    .profiles{
+        flex-direction: column;
+        max-width: 100%;
+        margin: auto 20px;
+        
+    }
+    .profile{
+        flex-basis: 90%;
+    }
+    .profile:first-child{
+        transform: translatey(0px);
+    }
+    .profile:nth-child(2){
+        transform: translatey(0px);
+    }
+    .container{
+        padding: 50px 20px;
+    }
+    
+    
+}
